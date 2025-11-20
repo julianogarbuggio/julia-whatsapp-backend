@@ -1,5 +1,5 @@
+
 @echo off
-python -m venv .venv
-call .venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port 8013 --reload
+echo Iniciando Jul.IA WhatsApp Backend em http://127.0.0.1:8011 ...
+uvicorn main:app --reload --host 127.0.0.1 --port 8011
+pause

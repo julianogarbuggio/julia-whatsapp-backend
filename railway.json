@@ -1,10 +1,8 @@
 {
-  "build": { "builder": "nixpacks" },
+  "build": {
+    "builder": "NIXPACKS"
+  },
   "deploy": {
-    "numReplicas": 1,
-    "restartPolicyType": "ON_FAILURE",
-    "healthcheckPath": "/health",
-    "healthcheckTimeout": 100,
     "startCommand": "uvicorn main:app --host 0.0.0.0 --port $PORT"
   }
 }
